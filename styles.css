@@ -130,6 +130,18 @@ a {
   transition: color 0.2s ease;
 }
 
+.cabecalho .titulo img {
+  transition: opacity 0.5s ease;
+}
+
+.cabecalho .titulo img.fade-out {
+  opacity: 0;
+}
+
+.cabecalho .titulo img.fade-in {
+  opacity: 1;
+}
+
 .menu-toggle {
   display: none;
   background: none;

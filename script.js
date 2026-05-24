@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const noticias = [
     {
+      titulo: "Penguins renovam contrato com atacante Connor Dewar e defensor Ilya Solovyov",
+      imagem: "assets/placeholder.avif",
+      link: "penguins_renovam_contrato_com_atacante_connor_dewar_e_defensor_ilya_solovyov/"
+    },
+    {
       titulo: "Promessa dos Pens, Bill Zonnon se destaca nos Playoffs da Calder Cup",
       imagem: "assets/zonnon.png",
       link: "link1.html"
-    },
-    {
-      titulo: "Afiliados dos Pens na ECHL, Wheeling Nailers são campeões da Divisão Norte",
-      imagem: "assets/nailers.jpg",
-      link: "link2.html"
     },
     {
       titulo: "Mason McTavish, dos Ducks, pode interessar aos Penguins nessa temporada",
