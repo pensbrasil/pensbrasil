@@ -10,38 +10,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const noticias = [
     {
-      titulo: "Penguins renovam contrato com atacante Connor Dewar e defensor Ilya Solovyov",
-      imagem: "assets/placeholder.avif",
-      link: "penguins_renovam_contrato_com_atacante_connor_dewar_e_defensor_ilya_solovyov/"
+      titulo: "Penguins abrem a temporada fora de casa contra os Flyers",
+      imagem: "assets/pensvsflyers.jpg",
+      link: "penguins_abrem_a_temporada_fora_de_casa_contra_os_flyers/"
     },
     {
-      titulo: "Promessa dos Pens, Bill Zonnon se destaca nos Playoffs da Calder Cup",
-      imagem: "assets/zonnon.png",
-      link: "link1.html"
+      titulo: "Resumo da pré-temporada dos Penguins: 2 vitórias e 2 derrotas",
+      imagem: "assets/preseason.png",
+      link: "resumo_da_pre_temporada_dos_penguins/"
     },
     {
-      titulo: "Mason McTavish, dos Ducks, pode interessar aos Penguins nessa temporada",
-      imagem: "assets/mctavish.jpg",
-      link: "link3.html"
+      titulo: "Penguins terminam torneio de prospects com duas vitórias e uma derrota",
+      imagem: "assets/prospects.jpg",
+      link: "penguins_terminam_torneio_de_prospects_com_duas_vitorias_e_uma_derrota/"
     },
     {
-      titulo: "Sidney Crosby jogará o mundial de 2026 pela Seleção Canadense",
-      imagem: "assets/sid.png",
-      link: "link4.html"
+      titulo: "Crosby deve renovar com os Penguins ainda antes da temporada, segundo jornalistas",
+      imagem: "assets/crosby.png",
+      link: "crosby_deve_renovar_com_os_penguins_antes_da_temporada/"
     },
     {
-      titulo: "Kyle Dubas fala sobre conversas de renovação com Evgeni Malkin",
-      imagem: "assets/dubas.png",
-      link: "link5.html"
+      titulo: "Penguins renovam com Ville Koivunen em contrato histórico",
+      imagem: "assets/koivunen.png",
+      link: "penguins_renovam_com_ville_koivunen_em_contrato_historico/"
     },
     {
-      titulo: "Tommy Novak e Connor Clifton representarão os EUA no mundial de 2026",
-      imagem: "assets/novak.png",
-      link: "link6.html"
-    }
+      titulo: "Batalha da Pensilvânia abre a temporada dos Pens fora de casa",
+      imagem: "assets/flyers.jpg",
+      link: "batalha_da_pensilvania_abre_a_temporada_dos_pens_fora_de_casa/"
+    },
   ];
 
-  // Últimas notícias list
   const listaContainer = document.querySelector(".noticias-secundarias");
   if (listaContainer) {
     listaContainer.innerHTML = "<h2>Últimas notícias</h2>";
@@ -58,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Noticias cards grid
   const cardsContainer = document.querySelector(".noticias-cards");
   if (cardsContainer) {
     cardsContainer.innerHTML = "";
@@ -72,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Outras notícias sidebar
   const outrasNoticiasCards = document.querySelector(".cards-outras-noticias");
   if (outrasNoticiasCards) {
     outrasNoticiasCards.innerHTML = "";
@@ -88,4 +85,105 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     });
   }
+});
+
+const jogos = [
+    {
+        time1: "PIT",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols1: 7,
+
+        time2: "PHI",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
+        gols2: 0,
+
+        link: "https://www.nhl.com/gamecenter/pit-vs-phi/2026/09/30/2026020006"
+    },
+
+    {
+        time1: "PIT",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols1: 3,
+
+        time2: "BUF",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+        gols2: 1,
+
+        link: "https://www.nhl.com/gamecenter/pit-vs-buf/2026/09/26/2026010055"
+    },
+
+    {
+        time1: "PIT",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols1: 0,
+
+        time2: "CBJ",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+        gols2: 4,
+
+        link: "https://www.nhl.com/gamecenter/pit-vs-cbj/2026/09/24/2026010046"
+    },
+
+    {
+        time1: "DET",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
+        gols1: 7,
+
+        time2: "PIT",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols2: 4,
+
+        link: "https://www.nhl.com/gamecenter/det-vs-pit/2026/09/22/2026010025"
+    },
+
+    {
+        time1: "BUF",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+        gols1: 1,
+
+        time2: "PIT",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols2: 4,
+
+        link: "https://www.nhl.com/gamecenter/buf-vs-pit/2026/09/21/2026010016"
+    },
+];
+
+const container = document.querySelector(".cards-jogos");
+
+jogos.forEach(jogo => {
+
+    const resultado1 = jogo.gols1 > jogo.gols2 ? "vitoria" : "derrota";
+    const resultado2 = jogo.gols2 > jogo.gols1 ? "vitoria" : "derrota";
+
+    const card = `
+        <a class="jogo" href="${jogo.link}" target="_blank">
+
+            <div class="time" id="${resultado1}">
+                <div class="equipe">
+                    <img src="${jogo.logo1}" alt="${jogo.time1}" width="100%">
+                    <p>${jogo.time1}</p>
+                </div>
+
+                <div class="resultado">
+                    <p class="placar">${jogo.gols1}</p>
+                </div>
+            </div>
+
+            <div class="time" id="${resultado2}">
+                <div class="equipe">
+                    <img src="${jogo.logo2}" alt="${jogo.time2}" width="100%">
+                    <p>${jogo.time2}</p>
+                </div>
+
+                <div class="resultado">
+                    <p class="placar">${jogo.gols2}</p>
+                </div>
+            </div>
+
+        </a>
+    `;
+
+    container.innerHTML += card;
+
 });

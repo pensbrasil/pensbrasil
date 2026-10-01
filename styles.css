@@ -22,6 +22,7 @@ header {
   top: 0;
   background-color: var(--cinza-escuro);
   border-bottom: 2px solid var(--cinza-detalhes);
+  z-index: 999;
 }
 
 footer {
@@ -42,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --amarelo: #feb71c;
   --branco: #f1f1f1;
@@ -49,6 +54,9 @@ a {
   --cinza-claro: #1a1a1a;
   --cinza-detalhes: #252525;
   --cinza-intermediario: #141414;
+  --cinza-cabecalho-tabela: #131313;
+  --cinza-coluna-tabela-impar: #171717;
+  --cinza-coluna-tabela-par: #1e1e1e;
 }
 
 .redes-sociais {
@@ -59,17 +67,22 @@ a {
 .item-redesocial {
   align-items: center;
   padding: 0px 20px;
-  transition: color 0.2s ease;
   color: var (--branco);
+  transition: 0.2s ease;
 }
 
 .item-redesocial:first-child {
   border-right: 2px solid var(--branco);
 }
 
-.item-redesocial svg:hover {
+.item-redesocial svg {
+  color: var(--branco);
+  transition: 0.2s ease;
+}
+
+.item-redesocial:hover svg {
   color: var(--amarelo);
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
   cursor: pointer;
 }
 
@@ -148,6 +161,44 @@ a {
   border: none;
   cursor: pointer;
   color: var(--branco);
+}
+
+.informacoes-historia {
+  padding: 0px 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.imagem-historia {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.informacoes-historia img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  border-bottom: 5px solid var(--amarelo);
+}
+
+.texto-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  width: 60%;
+  font-size: clamp(0.6rem, 1rem + 0.3vw, 2rem);
+  font-weight: 500;
+}
+
+.ultimo {
+  padding-bottom: 1.5rem;
 }
 
 @media (max-width: 860px) {
@@ -366,6 +417,16 @@ a {
   .noticias-secundarias {
     margin-top: 2rem;
   }
+
+  .informacoes-historia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagem-historia, .texto-historia {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 530px) {
@@ -390,17 +451,30 @@ a {
     font-size: 0.8rem;
     padding: 0.5rem 0;
   }
+
+  .informacoes-historia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagem-historia, .texto-historia {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }
 
 .h1-noticias {
+  width: fit-content;
   font-size: clamp(1.5rem, 2rem + 0.5vw, 2.5rem);
   font-weight: bold;
   color: var(--branco);
   text-align: center;
   margin: 0 auto;
+  border-bottom: 4px solid var(--amarelo);
+  line-height: 0.9;
 }
 
-.secao-noticias {
+.secao-noticias, .secao-historia {
   border-bottom: 5px solid var(--cinza-intermediario);
   scroll-margin-top: 7rem;
 }
@@ -514,7 +588,7 @@ a {
 }
 
 .conteudo-artigo {
-  font-weight: normal;
+  font-weight: 500;
   font-size: clamp(0.8rem, 1.1rem + 0.5vw, 1.5rem);
   display: flex;
   flex-direction: column;
@@ -608,5 +682,77 @@ a {
     text-align: center;
     justify-content: center;
   }
-
 }
+
+.cards-jogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: clamp(10rem, 95%, 60rem);
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+}
+
+.jogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  padding: 0.7rem;
+  box-shadow: 0 0 0 2px var(--cinza-detalhes);
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+
+.jogo:hover {
+  cursor: pointer;
+  box-shadow:
+        0 0 0 2px var(--amarelo),
+        0 5px 0 2px var(--amarelo);
+  transition: 0.1s ease;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.1rem;
+  font-size: clamp(1.3rem, 1.5rem + 0.5vw, 1.7rem);
+  font-weight: 600;
+}
+
+.placar {
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+.resultado p {
+  min-width: 1.5rem;
+  height: 2rem;
+}
+
+.equipe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.equipe p {
+  height: 2rem;
+}
+
+#vitoria .placar {
+  font-weight: 800;
+}
+
+#derrota {
+  opacity: 0.5;
+}
+
+.time img {
+  width: 30%;
+}
+
