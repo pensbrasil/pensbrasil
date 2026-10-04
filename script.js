@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const noticias = [
     {
+      titulo: "Aspectos da partida: Canadiens 5, Penguins 6",
+      imagem: "assets/otwinner.jpg",
+      link: "aspectos_da_partida_canadiens_5_penguins_6/"
+    },
+    {
       titulo: "Aspectos da partida: Penguins 7, Flyers 0",
       imagem: "assets/7a0.png",
       link: "aspectos_da_partida_penguins_7_flyers_0/"
@@ -33,11 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       titulo: "Crosby deve renovar com os Penguins ainda antes da temporada, segundo jornalistas",
       imagem: "assets/crosby.png",
       link: "crosby_deve_renovar_com_os_penguins_antes_da_temporada/"
-    },
-    {
-      titulo: "Penguins renovam com Ville Koivunen em contrato histórico",
-      imagem: "assets/koivunen.png",
-      link: "penguins_renovam_com_ville_koivunen_em_contrato_historico/"
     },
   ];
 
