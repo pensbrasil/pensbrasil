@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const noticias = [
     {
+      titulo: "Aspectos da partida: Penguins 7, Flyers 0",
+      imagem: "assets/7a0.png",
+      link: "aspectos_da_partida_penguins_7_flyers_0/"
+    },
+    {
       titulo: "Penguins abrem a temporada fora de casa contra os Flyers",
       imagem: "assets/pensvsflyers.jpg",
       link: "penguins_abrem_a_temporada_fora_de_casa_contra_os_flyers/"
@@ -33,11 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       titulo: "Penguins renovam com Ville Koivunen em contrato histórico",
       imagem: "assets/koivunen.png",
       link: "penguins_renovam_com_ville_koivunen_em_contrato_historico/"
-    },
-    {
-      titulo: "Batalha da Pensilvânia abre a temporada dos Pens fora de casa",
-      imagem: "assets/flyers.jpg",
-      link: "batalha_da_pensilvania_abre_a_temporada_dos_pens_fora_de_casa/"
     },
   ];
 
@@ -89,6 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const jogos = [
     {
+        time1: "MTL",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+        gols1: 5,
+
+        time2: "PIT",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols2: 6,
+
+        link: "https://www.nhl.com/gamecenter/mtl-vs-pit/2026/10/03/2026020026"
+    },
+
+    {
         time1: "PIT",
         logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
         gols1: 7,
@@ -134,18 +146,6 @@ const jogos = [
         gols2: 4,
 
         link: "https://www.nhl.com/gamecenter/det-vs-pit/2026/09/22/2026010025"
-    },
-
-    {
-        time1: "BUF",
-        logo1: "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
-        gols1: 1,
-
-        time2: "PIT",
-        logo2: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-        gols2: 4,
-
-        link: "https://www.nhl.com/gamecenter/buf-vs-pit/2026/09/21/2026010016"
     },
 ];
 
