@@ -10,6 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const noticias = [
     {
+      titulo: "Penguins adquirem Spencer Stastney em troca com Edmonton",
+      imagem: "assets/stastney.png",
+      link: "penguins_adquirem_spencer_stastney/"
+    },
+    {
+      titulo: "Simon Edvinsson pode estar na mira dos Penguins após pedir troca de Detroit",
+      imagem: "assets/edvinsson.jpeg",
+      link: "simon_edvinsson_pode_estar_na_mira_dos_penguins/"
+    },
+    {
       titulo: "Aspectos da partida: Canadiens 5, Penguins 6",
       imagem: "assets/otwinner.jpg",
       link: "aspectos_da_partida_canadiens_5_penguins_6/"
@@ -28,16 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       titulo: "Resumo da pré-temporada dos Penguins: 2 vitórias e 2 derrotas",
       imagem: "assets/preseason.png",
       link: "resumo_da_pre_temporada_dos_penguins/"
-    },
-    {
-      titulo: "Penguins terminam torneio de prospects com duas vitórias e uma derrota",
-      imagem: "assets/prospects.jpg",
-      link: "penguins_terminam_torneio_de_prospects_com_duas_vitorias_e_uma_derrota/"
-    },
-    {
-      titulo: "Crosby deve renovar com os Penguins ainda antes da temporada, segundo jornalistas",
-      imagem: "assets/crosby.png",
-      link: "crosby_deve_renovar_com_os_penguins_antes_da_temporada/"
     },
   ];
 
@@ -89,6 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const jogos = [
     {
+        time1: "WPG",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+        gols1: 3,
+
+        time2: "PIT",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols2: 2,
+
+        link: "https://www.nhl.com/gamecenter/wpg-vs-pit/2026/10/05/2026020042"
+    },
+
+    {
         time1: "MTL",
         logo1: "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
         gols1: 5,
@@ -134,18 +146,6 @@ const jogos = [
         gols2: 4,
 
         link: "https://www.nhl.com/gamecenter/pit-vs-cbj/2026/09/24/2026010046"
-    },
-
-    {
-        time1: "DET",
-        logo1: "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
-        gols1: 7,
-
-        time2: "PIT",
-        logo2: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-        gols2: 4,
-
-        link: "https://www.nhl.com/gamecenter/det-vs-pit/2026/09/22/2026010025"
     },
 ];
 
