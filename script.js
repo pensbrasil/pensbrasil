@@ -89,6 +89,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const jogos = [
     {
+        time1: "PIT",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols1: 2,
+
+        time2: "CBJ",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+        gols2: 3,
+
+        link: "https://www.nhl.com/gamecenter/pit-vs-cbj/2026/10/09/2026020068"
+    },
+    {
+        time1: "PIT",
+        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        gols1: 3,
+
+        time2: "WSH",
+        logo2: "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+        gols2: 5,
+
+        link: "https://www.nhl.com/gamecenter/pit-vs-wsh/2026/10/07/2026020053"
+    },
+    {
         time1: "WPG",
         logo1: "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
         gols1: 3,
@@ -122,30 +144,6 @@ const jogos = [
         gols2: 0,
 
         link: "https://www.nhl.com/gamecenter/pit-vs-phi/2026/09/30/2026020006"
-    },
-
-    {
-        time1: "PIT",
-        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-        gols1: 3,
-
-        time2: "BUF",
-        logo2: "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
-        gols2: 1,
-
-        link: "https://www.nhl.com/gamecenter/pit-vs-buf/2026/09/26/2026010055"
-    },
-
-    {
-        time1: "PIT",
-        logo1: "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-        gols1: 0,
-
-        time2: "CBJ",
-        logo2: "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-        gols2: 4,
-
-        link: "https://www.nhl.com/gamecenter/pit-vs-cbj/2026/09/24/2026010046"
     },
 ];
 
